@@ -15,7 +15,7 @@ object Main {
       case "/" => stack.push(stack.pop() / stack.pop())
       case "^" => stack.push(Math.pow(stack.pop(), stack.pop()))
       case _ => stack.push(token.toDouble)
-      })
+    })
     stack.pop()
   }
 }
